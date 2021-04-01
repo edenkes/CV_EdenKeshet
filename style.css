@@ -53,10 +53,11 @@ h2 {
 }
 
 .header--formal {
-    font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 2.8em;
     font-weight: 400;
 }
+
 h3 {
     font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #45b29a;
@@ -133,8 +134,8 @@ header {
 }
 
 .logo {
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     cursor: pointer;
 }
 
@@ -184,7 +185,8 @@ ul li a:hover {
     z-index: 1000;
     background: linear-gradient(transparent, #fff);
 }
-.header--icon{
+
+.header--icon {
     animation: header_show 2s ease-out;
 }
 
@@ -298,6 +300,21 @@ ul li a:hover {
     100% {
         bottom: 1480px;
         transform: translateX(-200px);
+    }
+}
+
+@keyframes flying_circle {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-100px, 100px);
+    }
+    90% {
+        transform: translate(-50px, -100px);
+    }
+    100% {
+        transform: translate(0, 0);
     }
 }
 
@@ -416,8 +433,8 @@ ul li a:hover {
     right: 5%;
     top: 5%;
     z-index: 9;
-    max-width: 20%;
-    height: 40%;
+    max-width: 40%;
+    height: 60%;
 }
 
 #bottom-cloud {
@@ -427,6 +444,20 @@ ul li a:hover {
     z-index: 10;
     max-width: 20%;
     height: 35%;
+}
+
+#sun {
+    position: absolute;
+    right: 15%;
+    top: 5%;
+    z-index: 9;
+    max-width: 20%;
+    height: 40%;
+}
+
+#sun:hover {
+
+    animation: flying_circle 10s infinite linear;
 }
 
 #mountain {
@@ -460,7 +491,7 @@ ul li a:hover {
     width: 85px;
     height: 85px;
     position: absolute;
-    left: 15%;
+    left: 10%;
     top: 33%;
 }
 
@@ -612,6 +643,7 @@ ul li a:hover {
 
     ul li a {
         font-size: 3rem;
+        margin-left: 0;
     }
 
     h1 {
@@ -644,6 +676,10 @@ ul li a:hover {
         height: auto;
         left: 2%;
         bottom: 25%;
+    }
+
+    #sun {
+        display: none;
     }
 
     #mountain {
@@ -784,10 +820,10 @@ ul li a:hover {
     }
 
     .footer-social-icons ul li a {
-        width: 150px;
-        height: 150px;
-        font-size: 80px;
-        line-height: 145px;
+        width: 120px;
+        height: 120px;
+        font-size: 70px;
+        line-height: 115px;
     }
 
     .copyright {
@@ -808,13 +844,12 @@ ul li a:hover {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 850px) {
     header {
-        display: block;
+        display: flex;
     }
 
     ul li {
         display: flex;
     }
-
 }
