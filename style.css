@@ -642,7 +642,7 @@ ul li a:hover {
     }
 
     ul li a {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-left: 0;
     }
 
@@ -661,7 +661,7 @@ ul li a:hover {
     }
 
     .top-container {
-        height: 1400px;
+        height: 1000px;
     }
 
     #top-cloud {
@@ -675,7 +675,7 @@ ul li a:hover {
         width: 250px;
         height: auto;
         left: 2%;
-        bottom: 25%;
+        bottom: 10%;
     }
 
     #sun {
@@ -700,13 +700,19 @@ ul li a:hover {
     }
 
     h2 {
-        font-size: 140px;
+        font-size: 8em;
+        margin: 0;
+    }
+
+    .header--formal {
+        font-size: 5em;
     }
 
     .p2 {
         line-height: 1.2;
-        font-size: 60px;
-        padding: 0;
+        font-size: 40px;
+        padding: 0 10%;
+        margin-bottom: 50px;
     }
 
     hr {
@@ -755,8 +761,8 @@ ul li a:hover {
     }
 
     .btn {
-        font-size: 40px;
-        border-radius: 35px;
+        font-size: 30px;
+        border-radius: 10px;
     }
 
     .content {
