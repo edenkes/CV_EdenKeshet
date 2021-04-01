@@ -52,6 +52,11 @@ h2 {
     font-size: 50px;
 }
 
+.header--formal {
+    font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 2.8em;
+    font-weight: 400;
+}
 h3 {
     font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #45b29a;
@@ -115,7 +120,7 @@ hr {
 }
 
 .f-link {
-    color: orange;
+    color: white;
     text-decoration: none;
 }
 
@@ -179,6 +184,9 @@ ul li a:hover {
     height: 20%;
     z-index: 1000;
     background: linear-gradient(transparent, #fff);
+}
+.header--icon{
+    animation: header_show 2s ease-out;
 }
 
 .bubbles {
@@ -294,6 +302,15 @@ ul li a:hover {
     }
 }
 
+@keyframes header_show {
+    0% {
+        transform: translateY(-400%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .middle-container {
     background-color: white;
     text-align: center;
@@ -397,7 +414,7 @@ ul li a:hover {
 
 #top-cloud {
     position: absolute;
-    right: 14%;
+    right: 5%;
     top: 5%;
     z-index: 9;
     max-width: 20%;
@@ -434,7 +451,7 @@ ul li a:hover {
     bottom: 0;
     overflow: hidden;
     z-index: -1;
-    background-color: #0d221e;
+    background-color: #21564b;
     width: 100%;
     height: 220px;
 
@@ -456,7 +473,7 @@ ul li a:hover {
 }
 
 .footer-link {
-    color: #45b29a;
+    color: white;
     font-family: 'Baloo Chettan 2', cursive;
     margin: 15px 12px;
     text-decoration: none;
@@ -503,7 +520,7 @@ ul li a:hover {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #11999E;
+    background: #45b29a;
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -511,13 +528,13 @@ ul li a:hover {
 
 .footer-social-icons ul li a:hover:before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #11999E;
+    box-shadow: 0 0 15px #45b29a;
 }
 
 .footer-social-icons ul li a:hover {
-    color: #11999E;
-    box-shadow: 0 0 5px #11999E;
-    text-shadow: 0 0 5px #11999E;
+    color: #45b29a;
+    box-shadow: 0 0 5px #45b29a;
+    text-shadow: 0 0 5px #45b29a;
 }
 
 .copyright {
@@ -536,7 +553,7 @@ ul li a:hover {
     border-radius: 3px;
     font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #1b7f69;
-    font-size: .8em;
+    font-size: .9em;
     padding: .75em 2em .75em 2em;
     text-decoration: none;
     text-transform: uppercase;
