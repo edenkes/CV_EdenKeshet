@@ -14,7 +14,7 @@ body {
 h1 {
     color: #45b29a;
     font-family: 'Tangerine', cursive;
-    font-size: 135px;
+    font-size: 15em;
     margin: 50px auto 0 auto;
     text-align: center;
 }
@@ -30,7 +30,7 @@ h1 {
 #p1 {
     color: #45b29a;
     font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 120%;
+    font-size: 3em;
     font-weight: 400;
     text-align: center;
     margin: 0;
@@ -46,14 +46,10 @@ h1 {
     padding: 0 25%;
 }
 
-.p2--profile {
-    /*padding: 0 20%;*/
-}
-
 h2 {
     color: #1e836c;
     font-family: 'Tangerine', cursive;
-    font-size: 50px;
+    font-size: 3em;
 }
 
 .header--formal {
@@ -122,19 +118,21 @@ hr {
     border-width: 6px;
     width: 50px;
     border-color: #DCDCDC;
-
 }
 
 .descending-background {
     background: linear-gradient(#E0EBE8, #fff);
-    /*background-image: linear-gradient(red, yellow);*/
-
     padding: 0.1em 0;
 }
 
 .ascending-background {
     background: linear-gradient(#fff, #E0EBE8);
     padding: 0.1em 0;
+}
+
+.ascending-background--footer {
+    background: linear-gradient(#fff  10%, #21564b);
+    padding: 0.3em 0 0 0;
 }
 
 .f-link {
@@ -171,12 +169,8 @@ ul li {
 ul li a {
     transition: all .3s ease-in-out;
     text-decoration: none;
-    display: inline-block;
     color: #45b29a;
-    font-weight: 400;
     margin: 0 0 0 1em;
-    font-size: 95%;
-
 }
 
 ul li a.active {
@@ -356,22 +350,14 @@ ul li a:hover {
     text-align: center;
 }
 
-.profile {
-    /*width: 50%;*/
-    /*margin-left: 25%;*/
-    /*margin-bottom: 5%;*/
-}
-
 .skills {
     background: #E0EBE8;
     padding: 1%;
-    /*width: 100%;*/
-    /*margin-left: 25%;*/
-    /*text-align: center;*/
 }
 
 .skill_img {
-    width: 3em;
+    max-width: 6em;
+    height: 3em;
     margin: 0 15px;
 }
 
@@ -457,11 +443,11 @@ ul li a:hover {
 
 #top-cloud {
     position: absolute;
-    right: -15%;
+    left: 75%;
     top: 5%;
     z-index: 9;
     max-width: 40%;
-    height: 60%;
+    height: 30%;
 }
 
 #bottom-cloud {
@@ -479,11 +465,11 @@ ul li a:hover {
     top: 5%;
     z-index: 9;
     max-width: 20%;
-    height: 40%;
+    height: 20%;
 }
 
 #sun:hover {
-
+    cursor: grab;
     animation: flying_circle 10s infinite linear;
 }
 
@@ -533,13 +519,10 @@ footer {
 }
 
 footer .footer-list {
-    overflow: hidden;
-    margin: 0 25%;
-    max-width: 600px;
+    margin: 0;
     padding: 0;
-    align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 footer .footer-list a {
@@ -709,6 +692,24 @@ footer .footer-list a:hover {
     .logo {
         width: 4.5em;
         height: 4.5em;
+        margin: 3em 0;
+    }
+
+    ul li a {
+        font-size: 2em;
+    }
+
+    .p2 {
+
+        padding: 0;
+    }
+
+    .copyright {
+        font-size: 0.55rem;
+    }
+
+    footer .footer-list a {
+        font-size: 1.6em;
     }
 
     #top-cloud {
@@ -761,8 +762,12 @@ footer .footer-list a:hover {
     }
 
     .btn {
-        font-size: 1.2em;
+        padding: 1.5em 2em;
         border-radius: 9px;
+    }
+
+    .btn-container .fa {
+        font-size: 4em;
     }
 
     .content {
