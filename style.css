@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -150,8 +154,8 @@ header {
 }
 
 .logo {
-    width: 85px;
-    height: 85px;
+    width: 3em;
+    height: 3em;
     cursor: pointer;
 }
 
@@ -185,7 +189,7 @@ ul li a:hover {
 
 .top-container {
     width: 100%;
-    height: 750px;
+    height: 100%;
     background-color: #E0EBE8;
     margin: 0;
     position: relative;
@@ -197,7 +201,7 @@ ul li a:hover {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 20%;
+    height: 30%;
     z-index: 1000;
     background: linear-gradient(transparent, #fff);
 }
@@ -205,7 +209,8 @@ ul li a:hover {
 .btn-container {
     margin: 4% 0;
 }
-.header--icon {
+
+.header--animation {
     animation: header_show 2s ease-out;
 }
 
@@ -366,7 +371,7 @@ ul li a:hover {
 }
 
 .skill_img {
-    width: 80px;
+    width: 3em;
     margin: 0 15px;
 }
 
@@ -452,7 +457,7 @@ ul li a:hover {
 
 #top-cloud {
     position: absolute;
-    right: 5%;
+    right: -15%;
     top: 5%;
     z-index: 9;
     max-width: 40%;
@@ -495,26 +500,11 @@ ul li a:hover {
 .midlogo {
     width: 140px;
     height: 140px;
-    padding-top: 80px;
 }
-
-/*#f {*/
-/*    !*position: fixed;*!*/
-/*    !*bottom: 0;*!*/
-/*    !*overflow: hidden;*!*/
-/*    !*z-index: -1;*!*/
-/*    background-color: #21564b;*/
-/*    !*width: 100%;*!*/
-/*    !*height: 220px;*!*/
-
-/*}*/
 
 .flogo {
     width: 85px;
     height: 85px;
-    /*position: absolute;*/
-    /*left: 10%;*/
-    /*top: 33%;*/
 }
 
 .link {
@@ -535,7 +525,6 @@ ul li a:hover {
 .footer-link:hover {
     color: #8FD0C2;
 }
-
 
 
 footer {
@@ -564,6 +553,7 @@ footer .footer-list a {
 footer .footer-list a:hover {
     color: #8FD0C2;
 }
+
 /*ooter .footer-list li {*/
 /*    width: 50%;*/
 /*    padding-top: 1em;*/
@@ -587,6 +577,7 @@ footer .footer-list a:hover {
         max-width: 970px;
     }
 }
+
 @media (min-width: 992px) {
     .container {
         max-width: 970px;
@@ -715,38 +706,15 @@ footer .footer-list a:hover {
 }
 
 @media screen and (max-width: 1050px) {
-
     .logo {
-        width: 180px;
-        height: 180px;
-    }
-
-    ul li a {
-        font-size: 2.5rem;
-        margin-left: 0;
-    }
-
-    h1 {
-        font-size: 250px;
-        margin: 280px auto 0 auto;
-    }
-
-    #h1 {
-        font-size: 220px;
-        margin: 280px auto 0 auto;
-    }
-
-    #p1 {
-        font-size: 3rem;
-    }
-
-    .top-container {
-        height: 1000px;
+        width: 4.5em;
+        height: 4.5em;
     }
 
     #top-cloud {
+        bottom: 40%;
         right: 4%;
-        top: 10%;
+        top: auto;
         width: 250px;
         height: auto;
     }
@@ -755,11 +723,15 @@ footer .footer-list a:hover {
         width: 250px;
         height: auto;
         left: 2%;
-        bottom: 10%;
+        bottom: 30%;
     }
 
     #sun {
-        display: none;
+        bottom: 50%;
+        right: 50%;
+        top: auto;
+        width: 250px;
+        height: auto;
     }
 
     #mountain {
@@ -769,53 +741,9 @@ footer .footer-list a:hover {
         bottom: 0;
     }
 
-    .profile {
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    .midlogo {
-        width: 310px;
-        height: 310px;
-    }
-
-    h2 {
-        font-size: 8em;
-        margin: 0;
-    }
-
-    .header--formal {
-        font-size: 5em;
-    }
-
-    .p2 {
-        line-height: 1.2;
-        font-size: 40px;
-        padding: 0 10%;
-        margin-bottom: 50px;
-    }
-
     hr {
         width: 10%;
         border-width: 10px;
-    }
-
-    .skills {
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    .timelineContent {
-        width: 90%;
-    }
-
-    h3 {
-        font-size: 60px;
-    }
-
-    p {
-        line-height: 1.2;
-        font-size: 60px;
     }
 
     .head {
@@ -832,17 +760,9 @@ footer .footer-list a:hover {
         font-size: 45px;
     }
 
-    .front {
-        width: 45%;
-    }
-
-    .py {
-        width: 45%;
-    }
-
     .btn {
-        font-size: 30px;
-        border-radius: 10px;
+        font-size: 1.2em;
+        border-radius: 9px;
     }
 
     .content {
@@ -852,7 +772,7 @@ footer .footer-list a:hover {
     }
 
     .skill_img {
-        width: 160px;
+        width: 6em;
     }
 
     .project_img {
@@ -868,28 +788,6 @@ footer .footer-list a:hover {
         font-size: 30px;
     }
 
-    .contact-me {
-        margin-bottom: 100%;
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    #f {
-        height: 800px;
-    }
-
-    .flogo {
-        top: 10%;
-        left: 38%;
-        width: 240px;
-        height: 240px;
-    }
-
-    .link {
-        top: 45%;
-        left: 20%;
-    }
-
     .footer-link {
         font-size: 50px;
     }
@@ -898,23 +796,6 @@ footer .footer-list a:hover {
         font-size: 50px;
         padding: 28px 35px;
         right: 27%;
-    }
-
-    .footer-social-icons ul {
-        top: 62%;
-        left: 50%;
-    }
-
-    .footer-social-icons ul li a {
-        width: 120px;
-        height: 120px;
-        font-size: 70px;
-        line-height: 115px;
-    }
-
-    .copyright {
-        font-size: 2rem;
-        left: 16%;
     }
 
     .card-container {
@@ -930,12 +811,16 @@ footer .footer-list a:hover {
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 500px) {
     header {
         display: flex;
     }
 
     ul li {
         display: flex;
+    }
+
+    #sun, #bottom-cloud, #top-cloud {
+        display: none;
     }
 }
