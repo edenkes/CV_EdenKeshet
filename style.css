@@ -67,10 +67,6 @@ h3 {
     line-height: 1.1;
 }
 
-.h3_1 {
-    color: #000;
-}
-
 .head {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -131,7 +127,7 @@ hr {
 }
 
 .ascending-background--footer {
-    background: linear-gradient(#fff  10%, #21564b);
+    background: linear-gradient(#fff 10%, #21564b);
     padding: 0.3em 0 0 0;
 }
 
@@ -142,7 +138,6 @@ hr {
 
 header {
     background-color: #E0EBE8;
-
 }
 
 .header {
@@ -166,8 +161,13 @@ ul li {
     padding: 0 15px;
 }
 
+ul li:hover {
+    transform: scale(1.1);
+    transition: transform 1.3s ease;
+}
+
+
 ul li a {
-    transition: all .3s ease-in-out;
     text-decoration: none;
     color: #45b29a;
     margin: 0 0 0 1em;
@@ -203,6 +203,10 @@ ul li a:hover {
 .btn-container {
     margin: 4% 0;
 }
+
+.btn-container:hover {
+    transform: scale(1.1);
+    transition: transform 1.3s ease;}
 
 .header--animation {
     animation: header_show 2s ease-out;
@@ -399,48 +403,6 @@ ul li a:hover {
     background: #1680e6;
 }
 
-.btn2 {
-    background: #005361;
-}
-
-.btn2:hover {
-    background: #00272e;
-}
-
-.btn3 {
-    color: #8c6c07;
-    background: #fae298;
-}
-
-.btn3:hover {
-    background: #f8d467;
-    color: #8c6c07;
-}
-
-.btn4 {
-    background: #2b3d51;
-}
-
-.btn4:hover {
-    background: #192430;
-}
-
-.btn5 {
-    background: #374760;
-}
-
-.btn5:hover {
-    background: #242f40;
-}
-
-.contact-me {
-    /*width: 50%;*/
-    /*margin-left: 25%;*/
-    /*margin-bottom: 20%;*/
-    /*padding-bottom: 5%;*/
-    /*padding: 1% 10%;*/
-}
-
 #top-cloud {
     position: absolute;
     left: 75%;
@@ -448,6 +410,11 @@ ul li a:hover {
     z-index: 9;
     max-width: 40%;
     height: 30%;
+}
+
+#top-cloud:hover {
+    transform: scale(1.1);
+    transition: transform 1.3s ease;
 }
 
 #bottom-cloud {
@@ -459,6 +426,11 @@ ul li a:hover {
     height: 35%;
 }
 
+
+#bottom-cloud:hover {
+    transform: scale(1.1);
+    transition: transform 1.3s ease;
+}
 #sun {
     position: absolute;
     right: 15%;
@@ -470,7 +442,8 @@ ul li a:hover {
 
 #sun:hover {
     cursor: grab;
-    animation: flying_circle 10s infinite linear;
+    transform: scale(2);
+    transition: transform 10.3s ease;
 }
 
 #mountain {
@@ -480,38 +453,12 @@ ul li a:hover {
     bottom: 0;
     left: 25%;
     z-index: 1;
-
 }
 
 .midlogo {
     width: 140px;
     height: 140px;
 }
-
-.flogo {
-    width: 85px;
-    height: 85px;
-}
-
-.link {
-    display: flex;
-    position: absolute;
-    top: 5%;
-    left: 41%;
-}
-
-.footer-link {
-    color: white;
-    font-family: 'Baloo Chettan 2', cursive;
-    margin: 15px 12px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.footer-link:hover {
-    color: #8FD0C2;
-}
-
 
 footer {
     background: #21564b;
@@ -535,15 +482,9 @@ footer .footer-list a {
 
 footer .footer-list a:hover {
     color: #8FD0C2;
+    transform: scale(1.1);
+    transition: transform 1.3s ease;
 }
-
-/*ooter .footer-list li {*/
-/*    width: 50%;*/
-/*    padding-top: 1em;*/
-/*    padding-bottom: 1em;*/
-/*    display: block;*/
-/*    float: left;*/
-/*}*/
 
 .container {
     -webkit-transition: all .5s ease-in-out;
@@ -617,14 +558,15 @@ footer .footer-list a:hover {
 }
 
 .footer-social-icons ul li a:hover:before {
-    transform: scale(1.1);
     box-shadow: 0 0 15px #45b29a;
 }
 
 .footer-social-icons ul li a:hover {
+    transform: scale(1.1);
+    transition: transform 1.3s ease;
     color: #45b29a;
-    box-shadow: 0 0 5px #45b29a;
-    text-shadow: 0 0 5px #45b29a;
+    box-shadow: 0 0 1em #E0EBE8, inset 0 0 0 2px #45b29a;
+    text-shadow: 0 0 1em #45b29a;
 }
 
 .copyright {
@@ -670,23 +612,6 @@ footer .footer-list a:hover {
     justify-content: space-between;
 }
 
-.card-img-top {
-    width: 100%;
-    height: 9rem;
-}
-
-.butn {
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: 'Baloo Chettan 2', cursive;
-    color: #45b29a;
-    padding: 0 3%;
-}
-
-.butn:hover {
-    color: #000;
-}
 
 @media screen and (max-width: 1050px) {
     .logo {
