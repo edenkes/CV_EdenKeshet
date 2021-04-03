@@ -11,6 +11,16 @@ body {
     letter-spacing: 2px;
 }
 
+@font-face {
+    font-family: HelveticaNeue-Light;
+    src: url("fonts/HelveticaNeue-Light.otf");
+}
+
+a {
+    color: #545454;
+    text-decoration: none;
+}
+
 h1 {
     color: #45b29a;
     font-family: 'Tangerine', cursive;
@@ -43,15 +53,19 @@ h1 {
     font-weight: 300;
     font-size: 1.0em;
     letter-spacing: normal;
-    padding: 0 25%;
+    padding: 0 20%;
 }
 
 h2 {
     color: #1e836c;
-    font-family: 'Tangerine', cursive;
+    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
     font-size: 3em;
 }
 
+h2 strong {
+    font-size: 0.5em;
+}
 .header--formal {
     font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 2.8em;
@@ -63,8 +77,9 @@ h3 {
     font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #45b29a;
     padding: 0;
-    font-weight: 500;
+    font-weight: 550;
     line-height: 1.1;
+    font-size: 1.3em;
 }
 
 .head {
@@ -82,12 +97,13 @@ h3 {
 }
 
 p {
-    line-height: 2;
     display: block;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    padding: 0 10px;
+    font-family: adobe-garamond-pro, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 1.0em;
+    letter-spacing: normal;
+    margin: 0 0 10px;
+
 }
 
 .p3 {
@@ -97,15 +113,6 @@ p {
     font-size: 18px;
     padding: 0 5% 0 5%;
     color: #fff;
-}
-
-.projectslink {
-    color: #45b29a;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.projectslink:hover {
-    color: #000;
 }
 
 hr {
@@ -123,6 +130,17 @@ hr {
 
 .ascending-background {
     background: linear-gradient(#fff, #E0EBE8);
+    padding: 0.1em 0;
+}
+
+
+.ascending-background--darker {
+    background: linear-gradient(#E0EBE8, #c2d7d2);
+    padding: 0.1em 0;
+}
+
+.descending-background--darker {
+    background: linear-gradient(#c2d7d2, #fff);
     padding: 0.1em 0;
 }
 
@@ -144,6 +162,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 2em;
 }
 
 .logo {
@@ -201,12 +220,13 @@ ul li a:hover {
 }
 
 .btn-container {
-    margin: 4% 0;
+    margin: 4%;
 }
 
 .btn-container:hover {
     transform: scale(1.1);
-    transition: transform 1.3s ease;}
+    transition: transform 1.3s ease;
+}
 
 .header--animation {
     animation: header_show 2s ease-out;
@@ -365,12 +385,48 @@ ul li a:hover {
     margin: 0 15px;
 }
 
-.project1 {
-    width: 100%;
-    height: auto;
-    background: #31355b;
+.expertises {
+    background: #E0EBE8;
+    padding: 1%;
+
 }
 
+.expertise {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.text {
+    max-width: 60%;
+    text-align: left;
+}
+
+.figure {
+    align-items: center;
+    display: flex;
+    margin: 0 2em;
+}
+.project1 {
+    background: #c2d7d2;
+    padding: 1em 0;
+}
+
+.paykey {
+    background: #E0EBE8;
+    padding: 1em 0;
+}
+
+.paykey p {
+    padding: 0 4em;
+    text-align: left;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+
+}
 .content {
     width: 50%;
     margin-left: 25%;
@@ -379,28 +435,8 @@ ul li a:hover {
 
 .project_img {
     width: 80%;
-    height: auto;
+    max-height: 20em;
     padding: 30px 0 0 0;
-}
-
-.mainbtn {
-    color: #fff;
-    background: #4299ed;
-    border-radius: 30px;
-    padding: 16px 86px;
-    text-align: center;
-    letter-spacing: 1px;
-    text-decoration: none;
-    line-height: 86px;
-    font-size: 18px;
-    margin-top: 30px;
-    transition: 0.8s all;
-    margin-bottom: 40px;
-}
-
-.mainbtn:hover {
-    color: #fff;
-    background: #1680e6;
 }
 
 #top-cloud {
@@ -431,6 +467,7 @@ ul li a:hover {
     transform: scale(1.1);
     transition: transform 1.3s ease;
 }
+
 #sun {
     position: absolute;
     right: 15%;
@@ -516,16 +553,9 @@ footer .footer-list a:hover {
 
 .footer-social-icons ul {
     margin: 2em 0;
-    /*padding: 0;*/
-    /*display: flex;*/
-    /*position: absolute;*/
-    /*top: 40%;*/
-    /*left: 50%;*/
-    /*transform: translate(-50%);*/
 }
 
 .footer-social-icons ul li {
-    /*margin: 0 15px;*/
     padding: 0;
     list-style: none;
 }
@@ -536,18 +566,15 @@ footer .footer-list a:hover {
     width: 70px;
     height: 70px;
     text-align: center;
-    line-height: 70px;
+    line-height: 2.6em;
     background: #fff;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 1.7em;
     color: #666;
-    transition: -5s;
 }
 
 .footer-social-icons ul li a:before {
     content: "";
-    /*position: absolute;*/
-    /*left: 0;*/
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -709,13 +736,6 @@ footer .footer-list a:hover {
         width: 100%;
         height: auto;
         padding: 10% 0 5% 0;
-    }
-
-    .mainbtn {
-        line-height: 200px;
-        padding: 20px 150px;
-        border-radius: 0;
-        font-size: 30px;
     }
 
     .footer-link {
