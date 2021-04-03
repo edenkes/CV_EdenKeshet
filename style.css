@@ -718,6 +718,9 @@ footer .footer-list a:hover {
         border-radius: 9px;
     }
 
+    .btn-container {
+        font-size: 1.2em;
+    }
     .btn-container .fa {
         font-size: 3em;
     }
